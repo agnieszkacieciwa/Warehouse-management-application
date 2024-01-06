@@ -19,7 +19,7 @@ conn.execute('''CREATE TABLE IF NOT EXISTS orders
 
 # Function to add new products to the inventory
 def add_product(name, price, quantity):
-    conn.execute("INSERT INTO products name, price, quantity) VALUES (?, ?, ?)", name, price, quantity))
+    conn.execute("INSERT INTO products name, price, quantity) VALUES (?, ?, ?)", name, price, quantity)
     conn.commit()
 
 # Function to remove products from the inventory
